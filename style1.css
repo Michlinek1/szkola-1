@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+}
+p{
+    border: 3px solid rgb(75, 73, 73);
+    background-color:#f2f2f2 ;
+}
+#marg1{
+    margin: 1cm;
+    
+}
+#marg2{
+    text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+    background-color: lightgray;
+}
+#marg3{
+    margin-left: 2cm;
+    margin-right: 5cm;
+    padding-bottom: 3cm;
+    background-color: lightgray;
+}
