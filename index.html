@@ -1,38 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praca 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+
 </head>
 <body>
+<h1 id="liczby" style = "color: green;"></h1>
+<h1 id = "zad1"></h1>
+<h1 id = "zad2"></h1>
+<h1 id = "zad3"></h1>
 
-    <p>
-       123 border
-    </p>
+<h1 id = "zad4h1"></h1>
+<input type="number" id="zad4">
+<button onclick="if(document.getElementById('zad4').value%2==0){
+    document.getElementById('zad4h1').innerHTML='Podana liczba jest parzysta'
+}
+else{
+    document.getElementById('zad4h1').innerHTML='Podana liczba NIE jest parzysta'
 
-    <h1>
-      niebieska
-    </h1>
+}">zad4</button><br>
 
-    <h2>
-        gruba,kropkowana
-    </h2>
-    <h3>
-        1
-        </h3>
+<h1 id = "zad5h1"></h1>
+<input type="number" id="zad5.1">
+<input type="number" id="zad5.2">
+<button onclick="
+const inp1 = document.getElementById('zad5.1').value
+const inp2 = document.getElementById('zad5.2').value
+if(inp1 % inp2 === 0){ document.getElementById('zad5h1').innerHTML='Pierwsza liczba jest podzielna przez druga'
+}else{
+    document.getElementById('zad5h1').innerHTML='Pierwsza liczba NIE jest podzielna przez druga'; console.log(inp1 % inp2)
+}
+">zad5</button>
+<h1 id = "zad6"></h1>
+<input type="number" id="zad6.1">
+<button onclick = "
+const input6 = document.getElementById('zad6.1').value
+if(input6 > 0){
+    document.getElementById('zad6').innerHTML='Dodatnia'
+}else if(input6 < 0){
+    document.getElementById('zad6').innerHTML='Ujemna'
+}else if(input6 == 0){
+    document.getElementById('zad6').innerHTML='Zero'
+}
+else{
+    document.getElementById('zad6').innerHTML='Błąd'
+}
+">zad6</button>
 
-    <div>
-        srednia cała
-    </div>
-    <div id = 'zadanie'>
-        zadanie
-    </div>
-    
-    
-    
+<h1 id = "zad7"></h1>
+<input type="number" id="zad7.1">
+<input type="number" id="zad7.2">
+<input type="number" id="zad7.3">
+<button onclick="
+const input7 = document.getElementById('zad7.1').value
+const input8 = document.getElementById('zad7.2').value
+const input9 = document.getElementById('zad7.3').value
+const arr = [input7,input8,input9]
+document.getElementById('zad7').innerHTML = 'Kolejność rosnąca: ' + arr.sort((a, b) => a - b) + '<br>Najwieksza liczba: ' + Math.max(input7, input8, input9)
+
+">zad7</button>
 </body>
 </html>

@@ -1,30 +1,31 @@
-document.write("Program javascript<br>")
- 
-var x="Javascript";
-var y="to jezyk";
-document.write("<br>"+x+y+"<br>")
- 
- 
-var imie="Michal";
-var nazwisko="Pałkowski";
-var wiek="16";
-var klasa="2";
-document.write("<p>Uczen "+imie+" "+nazwisko+" chodzi do klasy "+klasa+" i ma "+wiek+" lat</p>")
-var a = 10
-var b = '10'
-var c = 8
-var d= '8'
-if(a == b){
-    document.write("Liczby są równe <br>")
-}else{
-    document.write("Liczby nie są równe <br>")
+const a = 1
+const b = 2
+const c = 4
+const d = 8
+
+document.getElementById("liczby").innerHTML="a="+a+"<br>b="+b+"<br>c="+c+"<br>d="+d
+var zad1 = function(){
+    if(b === 0  || typeof a !== 'number' || typeof b !== 'number'){
+        document.getElementById("zad1").innerHTML ="blad";
+    }
+    document.getElementById("zad1").innerHTML ="a/b= "+ a/b
 }
 
-if(a === b){
-    document.write("Liczby są równe <br>")
-}else{
-    document.write("Liczby nie są równe <br> ")
+
+var zad2 = function(){
+    if(b === 0  || d === 0 || typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || typeof d !== 'number') {
+        document.getElementById("zad2").innerHTML ="blad";
+    }
+    document.getElementById("zad2").innerHTML ="a/b + c/d= "+ (a/b +c/d)
 }
 
-cos = new Array
-cos = ["1", "2", "3"]
+
+var zad3 = function(){
+    if((b-4) === 0  || typeof a !== 'number' || typeof b !== 'number'){
+        document.getElementById("zad3").innerHTML ="blad";
+    }
+    document.getElementById("zad3").innerHTML = "(a+6) / (b-4)= "+(a+6) / (b-4)
+}
+zad1()
+zad2()
+zad3()
